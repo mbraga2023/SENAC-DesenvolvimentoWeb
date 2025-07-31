@@ -1,0 +1,624 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* é um seletor de formatação universal e aplica-se a todas as tags */
+* {
+    margin: 0;
+    /* margem externa */
+    padding: 0;
+    /* margem interna */
+    box-sizing: border-box;
+    /* altera a forma como o CSS contabiliza o tamanho de um objeto. Incluindo as bordas e margens ao
+    tamanho do objeto */
+}
+
+/* Regra */
+body {
+    /* Propriedade: valor */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    /* background-image: url(imagens/servicos.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+}
+
+header {
+    background-color: #0e365f;
+    /* Cor de fundo */
+    text-align: center;
+    /* centraliza um texto */
+    margin: 0px 0px 0px 0px;
+    /* top right bottom left */
+    padding: 20px 0px 20px 0px;
+    /* top right bottom left */
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    color: #777;
+}
+
+/* Formatação genérica para os links */
+a{
+    text-decoration: none;      /* retirar o sublinhado dos links */
+    color: #492291;           /* alterar a cor dos links */
+}
+a:hover{
+    text-decoration: underline;     /* volta o sublinhado quando passar o mouse em cima */
+}
+
+/* Formatação da Home */
+
+main {
+    width: 1200px;
+    /* Fixa a largura */
+    margin: 0 auto 0 auto;
+    /* Centralizar o container (elemento de bloco) */
+    padding: 40px 0px 40px 0px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* O ponto (.) indica que "destaque" é uma classe e não uma tag */
+.destaque {
+    text-align: center;
+
+    p {
+        /* CSS nesting (alinhamento de CSS) */
+        color: #444;
+        /* cor da letra */
+        font-size: 1.2rem;
+        /* tamanho da letra */
+        line-height: 150%;
+        /* altura da linha ou espaçamento entre linhas */
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        font-weight: 600;       /* carga com valores de 100 a 900 se a font permitir */
+        /* font-style: italic;     Fonte em itálico */
+    }
+}
+
+.grid-home {
+    display: flex;
+    /* flexbox */
+    flex-wrap: wrap;
+    /* permitir a quebra de linha dos elementos */
+    gap: 25px;
+
+    /* espaçamento entre os elementos */
+    * {
+        flex-basis: 19%;
+        /* tamanho inicial para o elemento filho */
+        flex-grow: 1;
+        /* permitir aumentar o tamanho */
+        flex-shrink: 1;
+        /* permitir reduzir o tamanho */
+    }
+    a{
+        text-decoration: none;      /* Tirar o sublinhado */
+        color: #000;
+    }
+
+}
+
+.card {
+    /* Aplicar sombra */
+    /* 0: deslocamento horizontal, 3px: vertical, 10px: desfoque, rgba: cor */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 15px;
+    /* margem interna inferior */
+    border-radius: 10px;
+    /* Cantos arredondados */
+    text-align: center;
+
+    img {
+        width: 100%;
+        /* Fixa a largura proporcional */
+        object-fit: cover;
+        /* imagem se ajusta ao conteiner com proporção original */
+        height: 160px;
+        /* Altura original da imagem */
+    }
+
+    h3 {
+        color: #6a3bc8;
+        margin: 15px 0 8px 0;
+    }
+
+    p {
+        font-size: 0.95rem;
+        padding: 0px 10px;
+    }
+}
+
+/* Formata o comportamento do card. */
+.card:hover {
+    transform: translateY(-5px);
+    /* Modifica a aparência visual do elemento */
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+
+    a {
+        background-color: #aaa;
+        padding: 10px 15px;
+        /* 10px top e bottom, 15px left e right */
+        text-decoration: none;
+        /* Tirar o sublinhado do link */
+        color: #fff;
+        border-radius: 8px;
+        /* arredondar os cantos */
+    }
+
+    a:hover{
+        transform: translateY(-2px);
+    }
+
+    /* nth-child seleciona elementos filhos de uma tag usada em grupo */
+    a:nth-child(1) {
+        background-color: #3b5998;
+        /* Cor para o Facebook */
+    }
+
+    a:nth-child(2) {
+        background-color: #ff0000;
+        /* Cor para o Youtube */
+    }
+
+    a:nth-child(3) {
+        background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    }
+
+    a:nth-child(4) {
+        background-color: #25d366;
+        /* Cor para o WhatsApp */
+    }
+
+    a:nth-child(5) {
+        background-color: #000;
+        /* Cor para o TikTok */
+    }
+}
+
+
+/* Link voltar do rodapé das páginas */
+.voltar{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* Formatação do grid de clínica */
+.grid-clinica{
+    display: flex;      /* opção por layout em grid (grade). O padrão para o display é block */
+    justify-content: space-between;     /* alinha pelas margens externas (direita e esquerda) */
+    gap: 1.5rem;
+    align-items: flex-start;
+    div{
+        flex-grow: 1;       /* permite expandir a largura */
+        flex-shrink: 1;     /* permite reduzir a largura */
+        flex-basis: 300px;  /* tamanho inicial */
+    }
+    img{
+        width: 100%;        /* imagem responsiva */
+    }
+    h2{
+        text-align: start;      /* alinha à esquerda */
+        margin-bottom: 15px;
+        margin-top: 0px;
+    }
+    p{
+        line-height: 150%;      /* Altura da linha ou espaçamento entre linhas */
+        margin-bottom: 15px;    /* Margem inferior */
+    }
+    ul,ol{
+        padding-left: 20px;
+        list-style:square;
+        li{
+            line-height: 170%;
+        }
+    }
+}
+
+.foto-clinica-esquerda{
+    width: 300px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+.foto-clinica-direita{
+    width: 300px;
+    float: right;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+/* Especialidades */
+
+.grid-especialidades{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    
+    /* Isso fará com que os itens tenham no mínimo 250px e cresçam igualmente */
+    * {
+        flex-basis: 30%;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    i{
+        font-size: 3rem;
+        color: #6a3bc8;
+    }
+}
+
+/* Formatação das tabelas */
+
+table{
+    width: 100%;
+    border-collapse: collapse;      /* Junta as bordas em uma só */
+}
+th{
+    text-align: start;      /* alinhamento a esquerda */
+}
+
+
+.tabela1 th{
+    background-color: #aaa;
+    border: 2px solid #aaa;
+    padding: 8px;
+}
+.tabela1 td{
+    border: 2px solid #ccc;
+    padding: 8px;
+}
+.tabela1 th:nth-child(3),
+.tabela1 td:nth-child(3){    /* pseudo seletor */
+    text-align: end;
+    font-weight: 500;
+}
+.tabela1 th:nth-child(4),
+.tabela1 td:nth-child(4){    /* pseudo seletor */
+    text-align: center;
+}
+.tabela1 tr:nth-child(even){        /* even = par, odd = ímpar */
+    color: green;
+}
+
+
+
+/* tabela 2 */
+
+.tabela2 th {
+    border-bottom: 3px solid #aaa;
+}
+
+.tabela2 td {
+    border-bottom: 1px solid #ccc;
+}
+
+.tabela2 th:nth-child(2n+3),
+.tabela2 td:nth-child(2n+3) {
+    text-align: end;
+}
+
+.tabela2 th:nth-child(2n+4),
+.tabela2 td:nth-child(2n+4) {
+    text-align: center;
+}
+
+/* Formatação da terceira coluna */
+td:nth-child(3),
+th:nth-child(3) {
+    /* background-color: lightblue; */
+}
+/* tabela 3 */
+
+.tabela3 tr:nth-child(odd)
+
+/* even = par / odd = ímpar */
+    {
+    background-color: #ccc;
+}
+
+.tabela3 th:nth-child(2n+3),
+.tabela3 td:nth-child(2n+3) {
+    text-align: end;
+}
+
+.tabela3 th:nth-child(2n+4),
+.tabela3 td:nth-child(2n+4) {
+    text-align: center;
+}
+
+.banner{
+    width: 100%;
+}
+
+
+
+/* Formatação da galeria de imagens */
+
+.galeria-destaque{
+    display: flex;              /* necessário, pois img é tag inline */
+    justify-content: center;    /* Centralizar a imagem */
+    background-color: #333;
+    margin: 30px 0px 10px 0px;  /* top right bottom left */
+    img{
+        width: 60%;
+    }
+}
+.galeria-miniaturas{
+    display: flex;
+    justify-content: space-between;
+    img{
+        width: 110px;
+    }
+}
+
+.videos{
+    text-align: center;
+    video{
+        width: 70%;
+    }
+    iframe{
+        width: 70%;
+        /* height: 415px; */
+        height: 60vh;
+    }
+    /* .teste{
+        margin-top:-100px;
+        color: #fff;
+        font-size: 2rem;
+    } */
+}
+
+
+.grid-convenios{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    * {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 15%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    h3{
+        font-size: 1.2rem;
+        margin-top: 10px;
+        color: #726e8b;
+        font-weight: normal;
+    }
+    i{
+        font-size: 4rem;
+        color: #293f5f;
+        margin-top: 20px;
+    }
+}
+
+/* Formatação do contato */
+
+.contato{
+    display: flex;
+    justify-content: space-between;
+    div{                    /* formatação para todas as divs de contato */
+        flex-basis: 40%;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    div:last-child{         /*   Formata a última div (do mapa) */
+        iframe{
+            width: 100%;
+            height: 50vh;
+        }
+    }
+    label{
+        display: block;
+        /* background-color: #25d366; */
+        text-transform:uppercase;          /* caixa alta */
+        font-weight: bold;
+        font-size: .9rem;
+        margin-top: 20px;
+        color:#555;
+    }
+
+    input[type=text], input[type=email], textarea{
+        padding: 10px;
+        width: 90%;
+        border: 1px solid #bbb;
+        border-radius: 5px;
+    }
+
+    select{
+        padding: 8px;
+        border: 1px solid #bbb;
+        border-radius: 5px;
+    }
+    input[type=checkbox]{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    input[type=submit]{
+        border-style: none;     /* retirar a borda */
+        background-color: #3b5998;
+        color: #fff;
+        padding: 10px 30px;
+        border-radius: 5px;
+        cursor: pointer;        /* mudar o cursor para a mãozinha */
+    }
+    input[type=submit]:hover{       /* quando passar o mouse no botão */
+        background-color: #000;
+    }
+}
+
+/* Formatação do agendamento */
+
+.agendamento{
+    margin: 0px auto;           /* centralizar o container */
+    width: 50%;
+    text-align: center;         /* centralizar o conteúdo */
+    label{
+        display: block;         /* transformar em bloco para ficar separado do campo */
+        text-transform: uppercase;
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: .9rem;
+        color: #555;
+    }
+    .form-group{
+        display: flex;                      /* disposição lado a lado */
+        justify-content: space-between;     /* distribuição do conteúdo  */
+    }
+    input[type=date],
+    input[type=time],
+    input[type=text],
+    select{
+        padding: 8px;
+        border: 1px solid #bbb;
+        border-radius: 5px;
+    }
+    input[type=time] {
+        padding: 7px;
+    }
+    input[type=text]{
+        width: 80%;
+    }
+    input[type=submit]{
+        border-style: none;     /* retirar a borda */
+        background-color: #3b5998;
+        color: #fff;
+        padding: 10px 30px;
+        border-radius: 5px;
+        cursor: pointer;        /* mudar o cursor para a mãozinha */
+    }
+    input[type=submit]:hover{       /* quando passar o mouse no botão */
+        background-color: #000;
+    }
+    div{
+        margin-top: 30px;
+    }    
+
+}
+
+/* Formatação para layout responsivo */
+
+@media screen and (max-width: 800px){           /* media queries */
+
+    main{
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .grid-home{
+        * {
+            flex-basis: 100%;
+        }
+    }
+    .grid-clinica,
+    .grid-especialidades,
+    .grid-convenios,
+    .form-group,
+    .contato{
+        flex-direction: column;     /* mudar a direção do empilhamento das tags */
+        align-items: center;
+    }
+
+    .grid-clinica{
+        .card{
+            width: 100%;
+        }
+        div{
+            flex-basis: 100%;
+        }
+    }
+
+    .galeria-destaque{
+        img{
+            width: 100%;
+        }
+    }
+    .galeria-miniaturas{
+        flex-wrap: wrap;    /* quebrar a linha */
+        img{
+            width: 20%;
+        }
+    }
+    
+
+    .videos{
+        iframe{
+            width: 100%;
+            height: 35vh;
+        }
+        video{
+            width: 100%;
+        }
+    }
+
+    .agendamento{
+        width: 100%;
+    }
+
+    .contato{
+        div:last-child{
+            margin-top: 50px;
+        }
+    }
+
+    .rolagem{
+        overflow-x: auto;
+        width: 100;
+    }
+
+
+}
+
+
+
+
+@media screen and (max-width: 600px){
+    /* header {
+        background-color:red;
+    } */
+}
+
+@media screen and (max-width: 400px){
+    /* header {
+        background-color: yellow;
+    } */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

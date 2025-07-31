@@ -1,0 +1,63 @@
+HTML + CSS
+- Editor de código: VSCode 
+- Navegador: all
+
+- domínio (endereço)
+- hospedagem
+
+- inglês
+- lógica de programação
+
+github.com (repositórios)
+
+x
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22
+=========================================================
+
+<meta charset="UTF-8">
+
+meta é a tag
+charset é atributo (especificação ou complemento da tag)
+
+==========================================================
+
+PascalCase  TesteDeMesa
+camelCase   testeDeMesa
+snake_case  teste_de_mesa
+kebab-case  teste-de-mesa
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

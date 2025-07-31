@@ -1,0 +1,61 @@
+
+Git: Software local que controla as alterações no código (versionamento)
+
+Github: Plataforma online que hospeda repositórios Git para fins de versionamento e colaboração em equipe.
+
+Comandos úteis no CMD:
+cd [nome_da_pasta] permite navegar nas pastas
+cd.. voltar na navegação entre pastas
+cls limpar o terminal
+
+
+
+
+REPOSITÓRIO NOVO:
+
+# Inicializar um repositório local
+git init
+
+# Adiciona todos os arquivos novos ou modificados do diretório atual à área de "staging", preparando-os para o commit.
+git add .
+
+# Cria o commit com os arquivos do staging (empacotar)
+git commit -m "Aula 14/05/2025: Aula prática sobre versionamento de código"
+
+# Renomeia o branch (ramificação) atual para "main" (Opcional)
+git branch -M main
+
+# Adiciona um repositório remoto (no GitHub) chamado "origin" com o URL especificado.
+git remote add origin https://github.com/luisribeiro1/frontend1.git
+
+# Envia os commits locais para o repositório remoto (origin) no branch main, e configura o tracking para futuros pushes.
+git push -u origin main
+
+
+
+ATUALIZAÇÕES:
+
+git add .
+git commit -m "Aula 21/05/2025: Conteúdo da aula"
+git push
+
+
+PARA USAR EM OUTRO COMPUTADOR:
+
+# Clonar a estrutura do repositório
+git clone https://github.com/luisribeiro1/frontend.git
+
+# Puxar os conteúdos do repositório remoto para o local
+git pull origin main
+
+# Seguir os passos descritos em Atualizações.
+
+
+
+
+
+
+
+
+
+

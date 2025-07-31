@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica XYZ - Agendamento</title>
+    <meta name="description" content="Clínica com atendimento em várias especialidades médicas na cidade de Limeira">
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <!-- Esta seção é o cabeçalho -->
+    <header>
+        <img src="imagens/logo.png" alt="Logo da clínica XYZ">
+    </header>
+    
+    <main>
+        <section class="destaque">
+            <h1>Agendamento</h1>
+            <p>Opção online para agendamento de consultas</p>
+        </section>
+
+        <section class="agendamento">
+
+            <form action="" method="post" name="form-agendamento" id="form-agendamento">
+                <div class="form-group">
+                    <div>
+                        <label for="">Selecione a data:</label>
+                        <input type="date" id="data" name="data" required>
+                    </div>
+                    <div>
+                        <label for="">Selecione a hora:</label>
+                        <input type="time" id="hora" name="hora" required>
+                    </div>
+                    <div>
+                        <label for="">Selecione a especialidade:</label>
+                        <select name="especialidade" id="especialidade">
+                            <option></option>
+                            <option>Cardiologia</option>
+                            <option>Dermatologia</option>
+                            <option>Pediatria</option>
+                            <option>Ortopedia</option>
+                            <option>Clínica Geral</option>
+                            <option>Endocrinologia</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div>
+                    <input type="submit" value="Confirmar Agendamento" name="confirmar">
+                </div>
+
+            </form>
+
+
+        </section>
+
+        <section class="voltar">
+            <a href="index.html"> <i class="bi bi-arrow-left-circle-fill"></i> Voltar</a>
+        </section>
+
+    </main>
+    
+    <footer>
+        &copy; 2025 | Clínica XYZ | Créditos
+    </footer>
+</body>
+</html>
