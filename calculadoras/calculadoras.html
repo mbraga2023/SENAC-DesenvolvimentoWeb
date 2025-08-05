@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilitários em Javascript</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="toggle-container">
+        <input type="checkbox" id="toggle" class="toggle-input"> 
+        <label for="toggle" class="toggle-label">Dark mode</label>
+    </div>
+    <main>
+        <section>
+            <h2>Cálculo de IMC</h2>
+            <div id="resultadoImc"></div>
+            <div>
+                <label for="peso">Peso:</label>
+                <input type="number" id="peso" step="0.01">
+            </div>
+            <div>
+                <label for="altura">Altura:</label>
+                <input type="number" id="altura" step="0.01">
+            </div>
+            <div>
+                <label>&nbsp;</label>
+                <button id="calcularImc" class="botao">Calcular IMC</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Álcool ou Gasolina</h2>
+            <div id="resultadoCombustivel"></div>
+            <div>
+                <label for="alcool">Preço do álcool:</label>
+                <input type="number" id="alcool" step="0.01">
+            </div>
+            <div>
+                <label for="gasolina">Preço da gasolina:</label>
+                <input type="number" id="gasolina" step="0.01">
+            </div>
+            <div>
+                <label>&nbsp;</label>
+                <button id="calcularCombustivel" class="botao">Calcular combustível</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Cálculo de BTUs</h2>
+            <div id="resultadoBtus"></div>
+            <div>
+                <label for="largura">Largura do cômodo:</label>
+                <input type="number" id="largura" step="0.01">
+            </div>
+            <div>
+                <label for="comprimento">Comprimento do cômodo:</label>
+                <input type="number" id="comprimento" step="0.01">
+            </div>
+            <div>
+                <input type="radio" name="sol" id="sol-manha" value="1">Sol da manhã &nbsp;&nbsp;
+                <input type="radio" name="sol" id="sol-tarde" value="1">Sol da tarde
+            </div>
+            <div>
+                <label>&nbsp;</label>
+                <button id="calcularBtus" class="botao">Calcular BTUs</button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>

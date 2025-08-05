@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root {
+    --branco: #fff;
+    --azulEscuro: #1d3557;
+    --azulMedio: #457b9d;
+    --azulClaro: #a8dadc;
+    --quaseBranco: #f1faee;
+    --vermelho: #d31e2d;
+    --amarelo: #ffb703;
+    --verde: #1c7c54;
+    --dark: #333;
+    --darkMedio: #777;
+    --darkClaro: #ccc;
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+section {
+    background-color: var(--azulClaro);
+    border-radius: 8px;
+    padding:40px;
+    margin-top:20px;
+    text-align: center;
+}
+section div{
+    padding: 10px 0px;
+}
+
+h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+label{
+    display: block;
+}
+
+/* Estilo para inputs do tipo text, number e email */
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+    border: 1px solid #333;
+    padding: 5px 0px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+}
+input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+/* Botão */
+button{
+    padding: 10px;
+    background-color: var(--azulEscuro);
+    color:var(--quaseBranco);
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border:none;
+}
+button:hover{
+    cursor: pointer;
+    background-color: var(--vermelho);
+}
+
+/* Alertas */
+.alertaVermelho,
+.alertaAmarelo,
+.alertaVerde{
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+}
+.alertaVermelho{
+    background-color: var(--vermelho);
+    color: var(--quaseBranco);
+}
+.alertaAmarelo{
+    background-color: var(--amarelo);
+}
+.alertaVerde{
+    background-color: var(--verde);
+    color: var(--quaseBranco);
+}
+
+
+/* Botão dark mode */
+
+.toggle-container{
+    text-align: center;
+    margin-top: 10px;
+}
+.toggle-container label{
+    display: inline!important;
+}
+.toggle-container input{
+    width: 15px;
+    height: 15px;
+}
+
+/* Tema dark-mode */
+.dark-mode{
+    background-color: var(--dark);
+}
+.dark-mode section{
+    background-color: var(--darkMedio);
+}
+.dark-mode .toggle-container label{
+    color: var(--azulClaro);
+}
+.dark-mode input[type="text"],
+.dark-mode input[type="number"],
+.dark-mode input[type="email"] {
+    background-color: var(--darkClaro);
+}
