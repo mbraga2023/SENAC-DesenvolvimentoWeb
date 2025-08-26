@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APIs em Javascript</title>
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        main {
+            justify-content: center;
+        }
+        main section {
+            width: 50%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h2>Buscar endereço por CEP</h2>
+            <div>
+                <label for="cep">Digite o CEP:</label>
+                <input type="text" id="cep">
+            </div>
+            <div>
+                <div id="mostraErro"></div>
+                <button id="buscaCep" class="botao">Buscar Endereço</button>
+                <button id="btn-limpar" class="botao">Limpar</button>
+                <div id="animacao" class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+            <div>
+                <label for="rua">Rua:</label>
+                <input type="text" id="rua">
+            </div>
+            <div>
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro">
+            </div>
+            <div>
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade">
+            </div>
+            <div>
+                <label for="uf">UF:</label>
+                <input type="text" id="uf">
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/cep.js" ></script>
+</body>
+
+</html>

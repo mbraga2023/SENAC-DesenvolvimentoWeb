@@ -48,12 +48,12 @@ async function lerTodosContatos() {
   try {
     const response = await fetch('https://limeiraweb.com.br/api/contato/');
     const data = await response.json();
-    console.log(data); // To inspect the response structure
+    console.log(data); 
 
     const tbody = document.getElementById('linhas');
     tbody.innerHTML = '';
 
-    // If `data` is an array of contacts, use this:
+    
     data.forEach((element, index) => {
       let sexoFormatado = '';
       const sexo = element.sexo ? element.sexo.toString().toLowerCase().trim() : '';
