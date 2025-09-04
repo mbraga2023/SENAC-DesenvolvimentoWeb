@@ -16,7 +16,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     text-align: center;
 }
 
@@ -55,6 +55,17 @@ h1 {
     color: #007bff;
     margin-right: 10px;
 }
+
+.valorCompraVenda {
+    float: right;
+    background-color: #9c9b9b;      /* Fundo escuro */
+    color: #353535;                 /* Texto claro */
+    padding: 4px 8px;            /* Espaçamento interno */
+    border-radius: 4px;          /* Bordas arredondadas */
+    font-weight: bold;           /* Texto em negrito */
+    font-size: 0.9rem;           /* Tamanho de fonte ajustado */
+}
+
 
 
 /* Lista */
